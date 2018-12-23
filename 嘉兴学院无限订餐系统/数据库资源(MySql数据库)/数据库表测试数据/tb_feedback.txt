@@ -1,0 +1,10 @@
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(1,'¿Õ',1001000,'2012/10/7 22:43');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(2,'.Akak.bflh',1001000,'2012/10/8 15:52');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(3,'¿ÕÅª',1001000,'2012/10/9 20:47');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(4,'÷¼÷ÃÍŞÍŞ',1001000,'2012/10/9 20:48');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(5,'÷¼÷ÃÍŞÍŞ',1001000,'2012/10/9 20:48');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(6,'÷¼÷ÃÍŞÍŞ',1001000,'2012/10/9 20:48');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(7,'÷¼÷ÃÍŞÍŞ',1001000,'2012/10/9 20:48');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(8,'÷¼÷ÃÍŞÍŞ',1001000,'2012/10/9 20:49');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(9,'À­¶Ç×Ó',1001000,'2012/10/15 0:54');
+insert into tb_feedback (feedback_id,content,user_id,feebback_time) values(10,'ºÈ¿§·È',1001000,'2012/10/15 0:57');

@@ -1,0 +1,4 @@
+insert into tb_sale_activities (sale_title,sale_content,start_time,end_time) values('送啤酒','南昌8度买一送一','2012/9/1 0:00','2012/12/1 0:00');
+insert into tb_sale_activities (sale_title,sale_content,start_time,end_time) values('送会员卡','本店消费满500元送会员卡一张','2012/8/1 0:00','2012/11/20 0:00');
+insert into tb_sale_activities (sale_title,sale_content,start_time,end_time) values('套餐优惠','套餐——宫保鸡丁+拔丝香蕉 ￥35','2012/8/30 0:00','2012/10/15 0:00');
+

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_weight="1"
+    android:fadeScrollbars="true"
+    android:fadingEdge="none" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_dish_details_img"
+            android:layout_width="300dp"
+            android:layout_height="240dp"
+            android:layout_gravity="center_horizontal" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/list_mid_nor" >
+
+            <TextView
+                android:id="@+id/tv_dish_cur_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:gravity="center"
+                android:textColor="@color/tomato"
+                android:textSize="@dimen/dish_detail_price" />
+
+            <RelativeLayout
+                android:id="@+id/rel_ori_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/tv_dish_cur_price"
+                android:visibility="gone" >
+
+                <TextView
+                    android:id="@+id/tv_dish_ori_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:textColor="@color/biggray"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_alignLeft="@+id/tv_dish_ori_price"
+                    android:layout_alignRight="@+id/tv_dish_ori_price"
+                    android:layout_centerInParent="true"
+                    android:src="@color/red2" />
+                
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_detail_push_to_order"
+                android:layout_width="90dp"
+                android:layout_height="52dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="8dip"
+                android:background="@drawable/bg_more_setting"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/detail_push_to_order"
+                android:textColor="@color/white"
+                android:textSize="@dimen/view_more_textsize" />
+        </RelativeLayout>
+        <!--
+        <TextView
+            android:id="@+id/tv_dish_details_ordered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableBottom="@drawable/sep_order_codes"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:gravity="left"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        -->
+
+        <TextView
+            android:id="@+id/tv_dish_details_ordered_times"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="10dp"
+            android:drawableLeft="@drawable/ic_people_ok"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:textColor="@color/steelblue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="12dip"
+            android:background="@drawable/list_mid_nor"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_dish_details_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="8dip"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_dish_details_introduction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tv_dish_details_name"
+                android:layout_marginLeft="8dip"
+                android:layout_marginRight="8dip"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/view_more_textsize" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>

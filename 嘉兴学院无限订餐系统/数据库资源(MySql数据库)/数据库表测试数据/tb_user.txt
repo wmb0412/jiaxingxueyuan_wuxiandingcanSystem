@@ -1,0 +1,13 @@
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(540389,'what','whatat','2012/10/17 10:05','12','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(638221,'13870952869','1234','2010/10/10 12:00','21','kay',0,1000);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(1001000,'y','1234','2010/10/10 12:00','20','KevinKay',0,296);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(1515784,'280832809@qq.com','123456','2012/10/12 22:32','30','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(2002468,'137263552@qq.com','123456','2012/10/17 11:22','20','brazuca',0,-764);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(2712070,'15279111729','111111','2010/10/10 12:00','40','',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(3448711,'dapao','123456','2010/10/10 12:00','60','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(5397028,'15279111729','kaishan57795','2012/10/14 19:45','99','brazuca',0,99334);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(7272814,'13658426985','123456','2012/9/26 18:12','58','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(7733177,'123456654','123456654','2012/10/12 22:03','78','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(7881178,'wangn','111111','2010/10/10 12:00','66','brazuca',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(8001486,'dingyu','111111','2012/10/9 10:34','25','eleven',0,0);
+insert into tb_user (user_id,username,password,register_time,age,nickname,vip_type,balance) values(9895899,'284312857@qq.com','111111','2012/10/9 22:13','19','brazuca',0,0);

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+    
+    <RelativeLayout
+        android:id="@+id/rel_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/account_bg_topbar" >
+
+        <ImageView
+            android:id="@+id/iv_logo_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_top_bar" />
+
+        <TextView
+            android:id="@+id/tv_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_logo_topbar"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/tv_check_table"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/check_table"
+            android:textColor="@color/white"
+            android:textSize="@dimen/check_table" />
+    </RelativeLayout>
+
+     <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_topbar"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        
+        <ListView
+            android:id="@+id/lv_reserve_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+
+    </com.brazuca.ui.view.PullToRefreshView>
+    
+     <RelativeLayout
+        android:id="@+id/rel_error_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+       android:layout_below="@+id/rel_topbar"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/settings_push_error" />
+
+        <TextView
+            android:id="@+id/tv_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_error"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

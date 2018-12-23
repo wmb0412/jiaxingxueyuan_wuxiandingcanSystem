@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_feedback_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_feedback_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@drawable/account_bg_topbar" >
+
+        <TextView
+            android:id="@+id/tv_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="@string/feedback"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_feedback_submit"
+            android:layout_width="66dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/feedback_submit"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_feedback_back"
+            android:layout_width="66dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_title_back"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ed_feedback"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_feedback_topbar"
+        android:background="@null"
+        android:gravity="top"
+        android:hint="@string/feedback_hint"
+        android:minLines="5" />
+
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:clickable="true"
+        android:drawableLeft="@drawable/ic_delete"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_pop_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_dish_list_item"
+    android:descendantFocusability="beforeDescendants"
+    android:paddingBottom="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="4dp"/>
+
+    <ImageView
+        android:id="@+id/iv_dish"
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:src="@drawable/detail_pic_loading" />
+
+    <RelativeLayout
+        android:id="@+id/rel_dish_detail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/iv_dish" >
+
+        <TextView
+            android:id="@+id/tv_cur_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:textColor="@color/levelRed"
+            android:textSize="@dimen/home_pop_textsize"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/rel_ori_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/tv_cur_price"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_ori_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:textColor="@color/biggray"
+                android:textSize="@dimen/home_pop_textsize"
+                android:textStyle="bold" >
+            </TextView>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="2dp"
+                android:layout_alignLeft="@+id/tv_ori_price"
+                android:layout_alignRight="@+id/tv_ori_price"
+                android:layout_centerInParent="true"
+                android:src="@color/red2" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dishname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_cur_price"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_dish_pop"
+            android:gravity="left"
+            android:textColor="@color/biggray"
+            android:textSize="@dimen/home_pop_textsize" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_push_to_order"
+        android:layout_width="80dp"
+        android:layout_height="52dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/rel_dish_detail"
+        android:layout_marginBottom="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_more_setting"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/push_to_order"
+        android:textColor="@color/white"
+        android:textSize="@dimen/home_pop_textsize" />
+
+</RelativeLayout>

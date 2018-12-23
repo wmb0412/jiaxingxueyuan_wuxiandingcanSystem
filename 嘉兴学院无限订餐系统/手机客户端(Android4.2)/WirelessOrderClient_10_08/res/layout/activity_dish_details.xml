@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    
+    <RelativeLayout
+        android:id="@+id/rel_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@drawable/account_bg_topbar" >
+
+        <ImageView
+            android:id="@+id/iv_logo_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_top_bar" />
+
+        <TextView
+           	android:id="@+id/tv_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_logo_topbar"
+            android:text="菜品详细"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+ 
+    <include layout="@layout/sub_view_dish_details"/>
+
+</LinearLayout>

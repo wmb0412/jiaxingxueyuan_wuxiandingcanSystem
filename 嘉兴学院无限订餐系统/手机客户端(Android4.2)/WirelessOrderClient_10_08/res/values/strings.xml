@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="company">E餐厅项目组所有</string>
+    <string name="copyright">Copyright @2014BRAZUCA Corp.All Rights Reserved</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">松开后刷新</string>
+    <string name="pull_to_refresh_refreshing_label">正在刷新中</string>
+    <string name="table_in">该桌子有人，暂时不能预订</string>
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中</string>
+    <string name="pull_to_refresh_time_title">更新于</string>
+    <string name="no_more_dish">亲，只有这些了哦，更多新品，敬请期待</string>
+    <string name="get_table_info_from_net_fail">亲，您之前没有未处理的订单，请选择重新预订</string>
+    <string name="submit_order">提交订单</string>
+    <string name="no_dish_msg">菜单没有东西哦，快去首页点菜吧</string>
+    <string name="no_order_msg">您还没有下过单哦，快去选桌下单吧</string>
+    <string name="app_name">悠悠点餐</string>
+    <string name="submit_sure">确认</string>
+    <string name="submit_cancel">取消</string>
+    <string name="hint">提示</string>
+    <string name="hint_username">邮箱/手机号</string>
+    <string name="hint_password">密码</string>
+    <string name="hint_repassword">确认密码</string>
+    <string name="network_exception">联网失败，请检查网络配置</string>
+    <string name="btn_login_text">登录</string>
+    <string name="username_cannot_be_null">用户名不能为空</string>
+    <string name="password_cannot_be_null">密码不能为空</string>
+    <string name="password_cannot_less_six">密码不能少于6位</string>
+    <string name="repassword_cannot_be_null">确认密码不能为空</string>
+    <string name="repassword_cannot_less_six">确认密码不能少于6位</string>
+    <string name="password_not_equals_repassword">密码和确认密码不一样</string>
+    <string name="login_success">登录成功</string>
+    <string name="login_fail">登录失败，用户名与密码不一致</string>
+    <string name="login_ing">正在登录，请稍后^_^</string>
+    <string name="server_exception">服务器未知异常</string>
+    <string name="btn_register_text">注册</string>
+    <string name="register_ing">正在注册，请稍后</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_fail">注册失败</string>
+    <string name="btn_scan">浏览</string>
+    <string name="register_title_text">注册新账号</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_sale">活动</string>
+    <string name="tab_order">订单</string>
+    <string name="tab_more">更多</string>
+    <string name="login_out">退出登录</string>
+
+    <!-- 更多Item -->
+    <string name="call_service">呼叫服务员</string>
+    <string name="calling_service">正在呼叫服务员，请稍等^_^</string>
+    <string name="call_success">呼叫成功</string>
+    <string name="call_fail">呼叫失败，请重试</string>
+    <string name="order_manage">订单管理</string>
+    <string name="exchange_table">换桌</string>
+    <string name="more_setting">设置</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">说点儿什么吧...</string>
+    <string name="feedback_submit">提交</string>
+    <string name="submit_feenback_ing">正在提交反馈，请稍后</string>
+    <string name="check_new_version">检测新版本</string>
+    <string name="about_software">关于</string>
+    <string name="push_to_order">点菜</string>
+    <string name="detail_push_to_order">加入菜单</string>
+    <string name="clasify_all">全部</string>
+    <string name="clasify_sale">特价菜</string>
+    <string name="clasify_unique">招牌菜</string>
+    <string name="clasify_unit">套餐</string>
+    <string name="clasify_drink">酒水</string>
+    <string name="clasify_main">主食</string>
+    <string name="sort_default">默认排序</string>
+    <string name="sort_highest">价格最高</string>
+    <string name="sort_lowest">价格最低</string>
+    <string name="sort_most_welcome">人气最高</string>
+    <string name="sort_new">最新发布</string>
+    <string name="software_name">悠悠点餐Android版</string>
+    <string name="software_version">1.0版</string>
+    <string name="select_table">选择餐桌</string>
+    <string name="check_table">选桌</string>
+    <string name="btn_back">返回</string>
+
+    <!-- 用户协议 -->
+    <string name="user_agreements_title">注册表示您同意悠悠点餐用户协议，其中包含位置服务和隐私条款。</string>
+    <string name="user_agreements_pop_title">用户协议</string>
+    <string name="fbError">字数不能超过120字</string>
+    <string name="feedback_submit_success">反馈提交成功</string>
+    <string name="feedback_submit_fail">反馈提交失败</string>
+    <string name="select_single_count">选择份数</string>
+    <string name="next_step">下一步</string>
+    <string name="back">返回</string>
+    <string name="account_pay">账号支付</string>
+    <string name="online_pay">在线支付</string>
+    <string name="reception_pay">前台支付</string>
+    <string name="balace_negative">账户余额不足，请选择其他方式支付</string>
+    <string name="skip">跳过</string>
+    <string-array name="common_email">
+        <item>qq.com</item>
+        <item>126.com</item>
+        <item>163.com</item>
+        <item>yahoo.cn</item>
+        <item>yahoo.com.cn</item>
+        <item>sina.com</item>
+        <item>sina.com.cn</item>
+        <item>vip.sina.com</item>
+        <item>3g.sina.cn</item>
+        <item>139.com</item>
+        <item>189.cn</item>
+        <item>hotmail.com</item>
+        <item>163.com</item>
+        <item>gmail.com</item>
+        <item>sohu.com</item>
+    </string-array>
+    
+    
+     <string-array name="activities">
+        <item>FeedBackActivity</item>
+        <item>SplashActivity</item>
+        <item>WelcomeActivity</item>
+        <item>MainActivity</item>
+        <item>LoginActivity</item>
+        <item>RegisterActivity</item>
+        <item>HomeActivity</item>
+        <item>SaleActivity</item>
+        <item>OrderDetailsActivity</item>
+        <item>OrderActivity</item>
+        <item>MoreActivity</item>
+        <item>AboutActivity</item>
+        <item>DishDetailsActivity</item>
+        <item>TableActivity</item>
+        <item>SelectSingleCountActivity</item>
+    </string-array>
+
+</resources>

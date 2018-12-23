@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/account_bg_topbar" >
+
+        <ImageView
+            android:id="@+id/iv_logo_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_top_bar" />
+
+        <TextView
+            android:id="@+id/tv_home_activity_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_logo_topbar"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        
+        <TextView
+            android:id="@+id/tv_check_table"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/check_table"
+            android:textColor="@color/white"
+            android:textSize="@dimen/check_table" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_top_menu_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:layout_below="@+id/rel_topbar"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/ll_clasify"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_home_topbar_menu"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_cla_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/clasify_all"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_cla_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_deal_arrow_down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_sort"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_home_topbar_menu"
+            android:clickable="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_sort_item_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="@string/sort_default"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/iv_sort_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_deal_arrow_down" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <!--
+    这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView
+	要设置android:orientation="vertical"属性
+	否则,显示不正确
+        -->
+
+        <ListView
+            android:id="@+id/lv_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/sale_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_sale"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/drink_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_drink"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/special_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_special"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/main_food_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_main_food"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/unit_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ListView
+            android:id="@+id/lv_unit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+     <ImageView
+        android:id="@+id/iv_back_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:clickable="true"
+        android:src="@drawable/ic_home_back_top"
+        android:visibility="gone" />
+     
+    <!--
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/main_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/ll_top_menu_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/lv_home"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_sale"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_special"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_drink"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_main_food"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+
+        <ListView
+            android:id="@+id/lv_unit"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:visibility="gone" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+    -->
+
+</RelativeLayout>

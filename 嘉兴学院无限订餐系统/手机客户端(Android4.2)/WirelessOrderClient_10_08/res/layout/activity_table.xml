@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_table_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar"
+        android:background="@drawable/account_bg_topbar" >
+
+        <ImageView
+            android:contentDescription="@string/app_name"
+            android:id="@+id/iv_logo_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/logo_top_bar" />
+
+        <TextView
+            android:id="@+id/tv_topbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/iv_logo_topbar"
+            android:text="@string/select_table"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_table_skip"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="@string/skip"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_select_time"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rel_table_top_bar"
+        android:orientation="vertical" >
+
+        <DatePicker
+            android:id="@+id/dp_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:startYear="2012"
+            android:endYear="2012"
+            android:layout_marginTop="5dp"
+            android:layout_weight="2.0" />
+
+        <TimePicker
+            android:id="@+id/tp_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1.0"
+            android:background="@drawable/list_mid_nor"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_order_count_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:gravity="center"
+                android:text="订餐时间："
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_datatime_show"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/list_mid_nor"
+                android:gravity="center"
+                android:textColor="@color/red2"
+                android:textSize="17sp" />
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/table_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rel_table_top_bar"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <GridView
+            android:id="@+id/gridview_table"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:numColumns="2"
+            android:verticalSpacing="5dp" />
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightwhite"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_user_btn"
+            android:text="@string/btn_back"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_next_step"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1.0"
+            android:background="@drawable/bg_user_btn"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

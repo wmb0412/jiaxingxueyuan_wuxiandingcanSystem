@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="smwhite">#fffafafa</color>
+    <color name="tinywhite">#ffeeeeee</color>
+    <color name="smallwhite">#ffcccccc</color>
+    <color name="lightwhite">#ffbbbbbb</color>
+    <color name="graywhite">#ffaaaaaa</color>
+    <color name="lightgray">#ff999999</color>
+    <color name="smallgray">#ff888888</color>
+    <color name="gray">#ff777777</color>
+    <color name="biggray">#ff666666</color>
+    <color name="green">#ff00a905</color>
+    <color name="darkgray">#ff666666</color>
+    <color name="darkgreen">#ff0892a8</color>
+    <color name="grayblack">#ff555555</color>
+    <color name="darkblack">#ff444444</color>
+    <color name="lightblack">#ff333333</color>
+    <color name="smallblack">#ff222222</color>
+    <color name="tinyblack">#ff111111</color>
+    <color name="black">#ff000000</color>
+    <color name="smblack">#4e4e4e</color>
+    <color name="trans_black">#bb000000</color>
+    <color name="trans_bar">#99999999</color>
+    <color name="trans_bar_d">#ccdddddd</color>
+    <color name="transparent">#00000000</color>
+    <color name="yellow">#ffCDAD00</color>
+    <color name="levelRed">#ff7e0100</color>
+    <color name="blue">#4e72b8</color>
+    <color name="titlecolor">#11538b</color>
+    <color name="bgcolor">#272727</color>
+    <color name="greengray">#ff909090</color>
+    <color name="grassgreen">#ffa6da67</color>
+    <color name="beige">#226b8e23</color>
+    <color name="tomato">#ffff6347</color>
+    <color name="slategray">#33708090</color>
+    <color name="steelblue">#cc4682B4</color>
+    <color name="burlywood">#aaDEB887</color>
+    <color name="lightblue">#ffADD8E6</color>
+    <color name="lightbrown">#ff764d39</color>
+     <color name="darkbrown">#ff220807</color>
+     <color name="red2">#ffEE0000</color>
+     
+    
+    
+    
+
+</resources>

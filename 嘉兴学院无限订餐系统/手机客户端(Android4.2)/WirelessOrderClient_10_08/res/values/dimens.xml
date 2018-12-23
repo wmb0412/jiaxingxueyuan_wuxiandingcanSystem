@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="bottom_tab_padding_drawable">2.0dp</dimen>
+	<dimen name="bottom_tab_padding_up">5.0dp</dimen>
+	<dimen name="bottom_tab_font_size">12.0dp</dimen>
+	
+	<dimen name="view_more_textsize">16.0sp</dimen>
+	<dimen name="home_pop_textsize">16.0sp</dimen>
+	
+	<dimen name="dish_detail_price">24.0sp</dimen>
+	<dimen name="top_bar">48.0dp</dimen>
+	
+	<dimen name="title_btn">44.0dp</dimen>
+	<dimen name="check_table">14.0sp</dimen>
+	
+</resources>

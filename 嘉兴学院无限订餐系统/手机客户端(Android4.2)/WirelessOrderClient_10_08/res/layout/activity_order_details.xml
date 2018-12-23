@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        android:id="@+id/rel_order_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar" >
+
+        <TextView
+            android:id="@+id/tv_order_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/account_bg_topbar"
+            android:gravity="center"
+            android:text="订单详情"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_submit_order"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="75dp"
+            android:text="@string/next_step"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_submit_back"
+            android:layout_width="66dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/bg_title_back"
+            android:clickable="true"
+            android:gravity="center"
+            android:minWidth="55dp"
+            android:text="@string/back"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_order_details"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_order_top_bar" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dip"
+            android:layout_marginRight="8dip"
+            android:layout_marginTop="5dip"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/list_above_nor"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/ic_order_count" />
+
+                <TextView
+                    android:id="@+id/tv_order_count_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="已点种类："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_order_count_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/red2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/list_mid_nor"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/more_check_new_version" />
+
+                <TextView
+                    android:id="@+id/tv_pay_price_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="需要支付："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_price_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/red2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/list_below_nor"
+                android:clickable="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/more_about" />
+
+                <TextView
+                    android:id="@+id/tv_pay_type_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="支付类型："
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_pay_type_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:textColor="@color/red2"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_select_count_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rel_order_top_bar"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:visibility="gone" >
+
+        <RadioGroup
+            android:id="@+id/rg_select_pay_type"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:checkedButton="@+id/rb_account_pay"
+            android:orientation="vertical" >
+
+            <RadioButton
+                android:id="@+id/rb_account_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/top_bar"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_more_above_item"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/account_pay" />
+
+            <RadioButton
+                android:id="@+id/rb_online_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/top_bar"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_more_mid_item"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/online_pay" />
+
+            <RadioButton
+                android:id="@+id/rb_reception_pay"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/top_bar"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/bg_more_below_item"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:text="@string/reception_pay" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <com.brazuca.ui.view.PullToRefreshView
+        android:id="@+id/order_pull_refresh_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_order_details"
+        android:layout_marginTop="5dip"
+        android:background="@android:color/white"
+        android:orientation="vertical" >
+
+        <!--    这里放置listview,gridview或者scrollview的布局 ,PullToRefreshView	要设置android:orientation="vertical"属性,否则,显示不正确-->
+        <ListView
+            android:id="@+id/lv_order"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+    </com.brazuca.ui.view.PullToRefreshView>
+
+    <RelativeLayout
+        android:id="@+id/rel_error_msg"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_order_top_bar"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/iv_error"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/settings_push_error" />
+
+        <TextView
+            android:id="@+id/tv_error_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_error"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

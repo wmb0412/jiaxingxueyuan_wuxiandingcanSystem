@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/about" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:minHeight="100dp"
+        android:layout_height="wrap_content"
+        android:background="#38164968"
+        android:layout_alignParentBottom="true">
+        
+        <TextView 
+            android:id="@+id/tv_users_count"
+            android:layout_width="wrap_content"
+        	android:layout_height="38dp"
+        	android:layout_alignParentTop="true"
+        	android:layout_centerHorizontal="true"
+        	android:layout_marginTop="8dp"
+        	android:textColor="#8B4C39"
+        	android:drawablePadding="5dp"
+        	android:text="00,000,000 位用户在你身边"
+        	android:textSize="15sp"
+        	android:gravity="center"
+        	android:textStyle="bold"/>
+
+        <LinearLayout
+            android:id="@+id/ll_welcome_login_or_register_zone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_users_count"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_welcome_register"
+                android:layout_width="60dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_user_btn"
+                android:text="@string/btn_register_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_welcome_scan"
+                android:layout_width="60dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_user_btn"
+                android:text="@string/btn_scan"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_welcome_login"
+                android:layout_width="60dp"
+                android:layout_height="44dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_weight="1.0"
+                android:background="@drawable/bg_user_btn"
+                android:text="@string/btn_login_text"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/rel_confrim_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:paddingBottom="5dp"
+        android:background="@drawable/bg_comfirm_dialog"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_confrim_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="您之前未完成的订单,请选择其一完成,并选菜后提交订单"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:src="@color/steelblue" />
+
+        <ListView
+            android:id="@+id/lv_user_tables"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none" >
+        </ListView>
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="fill_parent"
+            android:layout_height="44dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_pop_dialog_cancel"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="重新选择"
+            android:textColor="@color/biggray"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

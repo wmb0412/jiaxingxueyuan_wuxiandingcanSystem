@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/black" >
+
+    <RelativeLayout
+        android:id="@+id/rel_select_count_top_bar"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/top_bar" >
+
+        <TextView
+            android:id="@+id/tv_topbar"
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/account_bg_topbar"
+            android:gravity="center"
+            android:text="@string/select_single_count"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_submit_single_count"
+            android:layout_width="60dp"
+            android:layout_height="@dimen/title_btn"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/bg_more_setting"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/rel_select_count_top_bar" >
+
+        <com.brazuca.ui.view.WheelView
+            android:id="@+id/wl_select_single_count"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

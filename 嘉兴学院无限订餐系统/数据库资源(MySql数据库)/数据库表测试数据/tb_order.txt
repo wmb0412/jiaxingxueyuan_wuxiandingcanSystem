@@ -1,0 +1,13 @@
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013164259_1001000',1001000,7,139,'2012/10/13 16:45',0,'«∞Ã®÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013164525_1001000',1001000,6,115,'2012/10/13 21:08',0,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013212935_1001000',1001000,2,113,'2012/10/13 21:32',0,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013213608_1001000',1001000,7,76,'2012/10/13 21:38',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013213905_1001000',1001000,11,70,'2012/10/13 21:41',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121013214044_1001000',1001000,4,210,'2012/10/13 23:49',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121014194725_5397028',5397028,3,656,'2012/10/14 19:52',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121014195655_5397028',5397028,1,10,'2012/10/14 19:59',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121014230021_1001000',1001000,2,35,'2012/10/15 0:53',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121015160701_1001000',1001000,2,235,'2012/10/15 16:08',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121015171008_1001000',1001000,3,80,'2012/10/15 19:11',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121016112322_1001000',1001000,4,35,'2012/10/16 19:54',1,'’À∫≈÷ß∏∂',0);
+insert into tb_order (order_id,user_id,table_id,total_price,submit_time,is_payed,pay_type,is_response_all) values('20121017032449_2002468',2002468,1,764,'2012/10/17 11:31',0,'«∞Ã®÷ß∏∂',0);

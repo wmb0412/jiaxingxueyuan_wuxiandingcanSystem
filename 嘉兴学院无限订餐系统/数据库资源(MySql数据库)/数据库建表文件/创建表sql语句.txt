@@ -1,0 +1,95 @@
+CREATE TABLE `tb_classification` (
+  `classification_id` int(11) NOT NULL DEFAULT '0',
+  `classification_name` varchar(20) NOT NULL,
+  PRIMARY KEY (`classification_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_dish` (
+  `dishes_id` int(11) NOT NULL,
+  `dishes_name` varchar(50) NOT NULL,
+  `time_to_market` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `original_price` double NOT NULL,
+  `current_price` double NOT NULL,
+  `cuisine` varchar(20) DEFAULT NULL,
+  `introduction` varchar(200) DEFAULT NULL,
+  `picture_url` varchar(50) NOT NULL,
+  `classification_name` varchar(20) NOT NULL,
+  `order_times` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`dishes_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_feedback` (
+  `feedback_id` int(11) NOT NULL AUTO_INCREMENT,
+  `content` varchar(180) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `feebback_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`feedback_id`),
+  KEY `pk_user_id` (`user_id`),
+  CONSTRAINT `pk_user_id` FOREIGN KEY (`user_id`) REFERENCES `tb_user` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_order` (
+  `order_id` varchar(40) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `table_id` int(11) NOT NULL DEFAULT '0',
+  `total_price` double NOT NULL,
+  `submit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `is_payed` tinyint(4) NOT NULL,
+  `pay_type` varchar(10) NOT NULL,
+  `is_response_all` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`order_id`),
+  KEY `pk_username` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_order_details` (
+  `order_id` varchar(40) NOT NULL DEFAULT '',
+  `dish_name` varchar(50) NOT NULL,
+  `count` int(11) NOT NULL DEFAULT '1',
+  `pay_price` double NOT NULL,
+  `submit_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `is_response` tinyint(4) NOT NULL DEFAULT '0',
+  KEY `pk_dish_id` (`dish_name`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_reserve_table_record` (
+  `order_id` varchar(40) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `reserve_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `table_id` int(11) NOT NULL,
+  `use_time` date NOT NULL DEFAULT '0000-00-00',
+  `use_hour` smallint(6) NOT NULL,
+  `type` smallint(6) NOT NULL DEFAULT '0',
+  `is_empty_food` tinyint(4) NOT NULL DEFAULT '0',
+  `is_submit` tinyint(4) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`order_id`),
+  KEY `Unnamed1` (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_sale_activities` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `sale_title` varchar(20) NOT NULL,
+  `sale_content` varchar(120) NOT NULL,
+  `start_time` datetime NOT NULL,
+  `end_time` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_sale_dish` (
+  `dishes_id` int(11) NOT NULL,
+  `dish_name` varchar(20) NOT NULL,
+  `original_price` double NOT NULL,
+  `current_price` double NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+
+CREATE TABLE `tb_user` (
+  `user_id` int(11) NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(20) NOT NULL,
+  `register_time` datetime NOT NULL,
+  `age` varchar(6) DEFAULT '0',
+  `nickname` varchar(20) DEFAULT 'brazuca',
+  `vip_type` smallint(1) NOT NULL DEFAULT '0',
+  `balance` double NOT NULL DEFAULT '0',
+  PRIMARY KEY (`user_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=gbk;
+CREATE  TABLE `db_wireless_order`.`tb_table` (  `table_id` INT NOT NULL ,  `table_status` BIT NOT NULL ,  PRIMARY KEY (`table_id`) )ENGINE=InnoDB DEFAULT CHARSET=gbk;
